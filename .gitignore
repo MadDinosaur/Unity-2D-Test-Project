@@ -264,3 +264,9 @@ Library/
 Temp/
 
 *.csproj
+
+*.sln
+
+*.asset
+
+ProjectSettings/ProjectVersion.txt
