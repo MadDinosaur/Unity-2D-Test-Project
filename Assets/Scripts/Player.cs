@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float speed = 6.0f;
     public float jumpSpeed = 8.0f;
     private float movement = 0f;
+    private Animator playerAnimation;
 
     public Transform groundCheckPoint;
     public float groundCheckRadius;
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        playerAnimation = GetComponent<Animator>();
 
     }
 
