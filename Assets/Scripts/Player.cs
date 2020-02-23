@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,6 +34,17 @@ public class Player : MonoBehaviour
         else
         {
             rigidBody.velocity = new Vector2(movement * speed, rigidBody.velocity.y);
+        }
+
+        //Animation
+        playerAnimation.SetFloat("Speed", Math.Abs(rigidBody.velocity.x));
+        playerAnimation.SetBool("isTouchingGround", isTouchingGround);
+        if (movement >= 0f)
+        {
+            transform.localScale = new Vector2(-Math.Abs(rigidBody.transform.localScale.x), rigidBody.transform.localScale.y);
+        } else
+        {
+            transform.localScale = new Vector2(Math.Abs(rigidBody.transform.localScale.x), rigidBody.transform.localScale.y);
         }
     }
 }

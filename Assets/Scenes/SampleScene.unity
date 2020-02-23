@@ -1480,7 +1480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2821bfa33edbc5c4e9899a23600649fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 5
   jumpSpeed: 8
   groundCheckPoint: {fileID: 383668815}
   groundCheckRadius: 0.19
@@ -1496,7 +1496,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 2009254177}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8fbee27bc0eef204cbe9baf120d8f220, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1905,8 +1905,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009254177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.13, y: -3.07, z: 0}
-  m_LocalScale: {x: 0.19189169, y: 0.15089881, z: 1}
+  m_LocalPosition: {x: -5.934, y: -2.613, z: 0}
+  m_LocalScale: {x: 0.2668814, y: 0.23424326, z: 1}
   m_Children:
   - {fileID: 383668815}
   m_Father: {fileID: 0}
